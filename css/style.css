@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  display: grid;
+  font-family: sans-serif;
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.hero-section {
+  background-color: #fdebe9;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  text-align: center;
+  color: #1931c5;
+  font-weight: 900;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.description {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.underline {
+  text-decoration: underline;
+}
+.player-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-section {
+  background-color: #242021;
+  border-radius: 10px;
+  height: 60vh;
+  width: 50%;
+  margin: 2rem 2rem 1rem 2rem;
+}
+.text-blue {
+  color: #1931c5;
+}
+.partners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.logo-text {
+  font: 0.825rem;
+}
+.img-size {
+  width: 5rem;
+}
+
+.gpt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.awards-timer-section {
+  margin: 0 4rem;
+}
+.awards-logo {
+  padding-bottom: 2rem;
+  width: 10rem;
+  margin-top: -6rem;
+  display: block;
+}
+.awards-logo-2 {
+  padding-bottom: 2rem;
+  width: 10rem;
+  display: none;
+}
+.content-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-section-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.sub-description {
+  font-size: 1rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+.timer-section-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 4rem;
+}
+
+.timer-section-container-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 4rem;
+}
+.timer-section {
+  border: 3.5px dashed #1931c5;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 0.5rem 2rem;
+}
+
+.timer-text {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #373549;
+  margin: 0;
+}
+
+.timer-button {
+  background-color: #1931c5;
+  color: white;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  display: none;
+  flex-direction: column;
+}
+
+.timer {
+  font-weight: 900;
+  color: #373549;
+  font-size: 2rem;
+  margin: 0;
+}
+.btn-text {
+  font-weight: 300;
+}
+
+.btn-text-one {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+.btn-text-two {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
+}
+.footer-links {
+  font-size: 0.75rem;
+  color: #1931c5;
+  color: #373549;
+  margin: 0.25rem;
+  font-weight: 400;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+/* For mobile devices */
+@media (max-width: 769px) {
+  .awards-logo-2 {
+    display: block;
+  }
+  .awards-logo {
+    display: none;
+  }
+  .player-section {
+    width: 90%;
+    height: 40vh;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .content-section-container {
+    grid-template-columns: 1fr;
+    margin: 1rem 1rem;
+  }
+
+  .timer-section-container,
+  .timer-section-container-two {
+    margin: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .timer-section {
+    padding: 0.5rem;
+  }
+  .footer-links-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

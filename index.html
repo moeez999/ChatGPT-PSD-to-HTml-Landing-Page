@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="hero-section">
+      <div class="container">
+        <div>
+          <h1 class="title">Help Nederland Aan Een Universeel Basis Inkomen</h1>
+          <p class="description">
+            En ontvang vandaag al €1486 tot €2283 als
+            <span class="underline">maandelijkse</span> vergoeding
+          </p>
+          <div class="player-section-container">
+            <div class="player-section"></div>
+          </div>
+          <div class="partners-section">
+            <p class="logo-text">
+              In samenwerking met <br />
+              studenten van:
+            </p>
+            <div class="img-size">
+              <img src="./assets/Layer4.png" alt="" />
+            </div>
+            <div class="img-size">
+              <img src="./assets/Layer5.png" alt="" />
+              <p class="sub-description"></p>
+            </div>
+            <div class="img-size gpt">
+              <img src="./assets/Layer6.png" alt="" />
+              <img src="./assets/TradingGPT.png" alt="" />
+            </div>
+          </div>
+          <div class="timer-section-container">
+            <div class="timer-section">
+              <p class="timer-text">
+                Jouw unieke link verschijnt hier EENMALIG over:
+              </p>
+              <p class="timer">00:00</p>
+            </div>
+            <a href="https://www.google.com/" class="timer-button">
+              <span class="btn-text-one">
+                <span class="btn-text">Ja!</span> IK Help
+              </span>
+              <span class="btn-text-two">
+                (Klik hier terug te laten bellen door onze GPT trader)
+              </span>
+            </a>
+            <div class="awards-timer-section">
+              <div class="awards-logo-2">
+                <img src="./assets/layer1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="awards-timer-section">
+          <div class="awards-logo">
+            <img src="./assets/layer1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="">
+        <h1 class="title">Statistieken sinds Januari 2024</h1>
+        <p class="description">* Laatste update op 6 Augustus 2024</p>
+      </div>
+
+      <div class="content-section-container">
+        <div>
+          <h2 class="subtitle">
+            <span class="text-blue">679</span> Deelnemers
+          </h2>
+          <p class="sub-description">
+            <span class="text-bold">Geverifieerd</span> vanaf de eerste
+            uitbetaling. <br />
+            (nog 331 plaatsen beschikbaar).
+          </p>
+        </div>
+        <div>
+          <h2 class="subtitle">
+            <span class="text-blue">€1931</span> Gemiddelde Uitbetaling
+          </h2>
+          <p class="sub-description">
+            Gemiddelde over 6 maanden, <br />
+            per <span class="text-bold">unieke deelnemer, per maand,</span>
+            <br />
+            minus Onderzoeksbijdrage.
+          </p>
+        </div>
+        <div>
+          <h2 class="subtitle">
+            <span class="text-blue">€179.893.21</span> Onderzoeksbijdrage
+          </h2>
+          <p class="sub-description">
+            Uit de 9.5% onderzoeksbijdrage
+            <span class="text-bold">van jouw winst</span> is dit
+            <br />
+            totaalbedrag verzameld en gespendeerd aan <br />
+            ontwikkeling van de GPT.
+          </p>
+        </div>
+        <div>
+          <h2 class="subtitle">
+            <span class="text-blue">7 Nieuwe </span>Universiteiten aan boord
+          </h2>
+          <p class="sub-description">
+            Binnenkort verwachten we deelname van de Radboud Universiteit <br />
+            Nijmegen, Hogeschool Rotterdam, Technische Universiteit Eindhoven
+            <br />en meer...
+          </p>
+        </div>
+      </div>
+      <div class="timer-section-container-two">
+        <div class="timer-section">
+          <p class="timer-text">
+            Jouw unieke link verschijnt hier EENMALIG over:
+          </p>
+          <p class="timer">00:00</p>
+        </div>
+        <a href="https://www.google.com/" class="timer-button">
+          <span class="btn-text-one">
+            <span class="btn-text">Ja!</span> IK Help
+          </span>
+          <span class="btn-text-two">
+            (Klik hier terug te laten bellen door onze GPT trader)
+          </span>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-links-one">
+        <a href="" class="footer-links"> Privacy Policy</a>
+        <a href="" class="footer-links">AVG Wetgeving</a>
+      </div>
+      <div class="footer-links-two">
+        <a href="" class="footer-links">Contact</a>
+        <a href="" class="footer-links">Veiligheidskeurmerk</a>
+        <a href="" class="footer-links">Voor studenten</a>
+        <a href="" class="footer-links">Werken big Ikhelp.org</a>
+      </div>
+    </footer>
+    <script>
+      function startTimer(duration, display) {
+        let timer = duration,
+          minutes,
+          seconds;
+        const interval = setInterval(() => {
+          minutes = parseInt(timer / 60, 10);
+          seconds = parseInt(timer % 60, 10);
+
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          display.forEach((element) => {
+            element.textContent = minutes + ":" + seconds;
+          });
+
+          if (--timer < 0) {
+            clearInterval(interval);
+            document.querySelectorAll(".timer-section").forEach((element) => {
+              element.style.display = "none";
+            });
+            document.querySelectorAll(".timer-button").forEach((element) => {
+              element.style.display = "flex";
+            });
+          }
+        }, 1000);
+      }
+
+      window.onload = function () {
+        const threeMinutes = 3;
+        const display = document.querySelectorAll(".timer");
+        startTimer(threeMinutes, display);
+      };
+    </script>
+  </body>
+</html>
