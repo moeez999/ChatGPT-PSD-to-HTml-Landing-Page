@@ -54,14 +54,17 @@ img {
 .partners-section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 .logo-text {
-  font: 0.825rem;
+  margin: 0;
+  font-size: 0.825rem;
+  font-weight: 400;
 }
 .img-size {
-  width: 5rem;
+  width: 7rem;
 }
 
 .gpt {
@@ -94,7 +97,6 @@ img {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   gap: 2rem;
   justify-content: center;
   align-items: center;
