@@ -1,7 +1,7 @@
 body {
   margin: 0;
   display: grid;
-  font-family: sans-serif;
+  font-family: "Inter";
   font-size: 62.5%;
 }
 
@@ -10,7 +10,7 @@ img {
   height: auto;
 }
 .hero-section {
-  background-color: #fdebe9;
+  background: url(../assets/background.png);
   padding: 2rem 0;
 }
 .container {
@@ -191,6 +191,12 @@ footer {
 }
 /* For mobile devices */
 @media (max-width: 769px) {
+  .img-size {
+    width: 5rem;
+  }
+  .partners-section {
+    gap: 0.5rem;
+  }
   .awards-logo-2 {
     display: block;
   }
@@ -199,9 +205,10 @@ footer {
   }
   .player-section {
     width: 90%;
-    height: 40vh;
   }
-
+  .logo-text {
+    font-size: 0.5rem;
+  }
   .title {
     font-size: 1.5rem;
   }
@@ -231,5 +238,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media (max-width: 321px) {
+  .img-size {
+    width: 4rem;
   }
 }
